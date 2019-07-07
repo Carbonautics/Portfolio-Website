@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat' , sans-serif;
+}
+#hero_txt h1 {
+    font-size: 4.2em;
+    font-weight: 600;
+    padding-top: 250px;
+    padding-left: 50px;
+}
+
+#hero_txt p {
+    font-size: 1.3em;
+    padding-left: 50px;
+    font-style: italic;
+}
+
+#mainNavbar div a {
+    color: black;
+}
+
+#mainNavbar #navLinks ul .active {
+    text-decoration: underline;
+    font-size: 105%;
+}
