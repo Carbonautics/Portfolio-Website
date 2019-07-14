@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-    <nav id="mainNavbar" class="navbar navbar-expand-md">
+    <nav id="mainNavbar" class="navbar navbar-expand-md sticky-top">
         <a class="navbar-brand" href="https://carbonautics.github.io">
             <img src="/imgs/black transparent.png" width="250" height="34">
         </a>
@@ -28,17 +28,17 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto w-100 justify-content-end">
-                <li class="nav-item">
-                    <a href="" class="nav-link">about</a>
+                <li class="nav-item hover" id="hoverbtn">
+                    <a href="#About Me" class="nav-link">about</a>
                 </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">progress</a>
+                <li class="nav-item hover">
+                   <a href="" class="nav-link">progress</a>
                 </li>
             </ul>
         </div>
     </nav>
     
-    <section class="container-fluid px-0">
+    <section class="container-fluid px-0" id="page-1">
         <div class="row">
             <div class="col-md-6" id="hero_txt">
                     <h1>A Portfolio Website</h1>
@@ -48,6 +48,22 @@
                 <img class ="img-fluid" id="geometric" src="/imgs/geometric.svg" alt="square geometric image">
             </div>
         </div>   
+    </section>
+    <section id="page-2">
+        <div class="rectangle" id="About Me">
+            <div class="left">
+                <h1>About me</h1>
+            </div>
+            <div class="right">
+                <h2>Pratik Nadgouda</h2>
+                <p>
+                    Currently I am an Engineering Student learning Electronics and Communications. I mostly understand everything by experimenting a lot; 'Trial and Error' method, which gives the most interesting results known to me.   
+                </p>
+                <p>
+                    I love Electronics, Design, Photography, Coding, Driving, Travel. The next page will show you my progress in learning some skills related to these.
+                </p>
+            </div>
+        </div>
     </section>
 
 
