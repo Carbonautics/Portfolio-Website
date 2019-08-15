@@ -36,40 +36,43 @@ body {
 }
 
 .navbar-toggler {
-    border-color: black;
+    background: transparent !important;
+}
+.navbar-toggler:hover {
+    background: transparent !important;
 }
 .navbar-toggler .navicon {
-    width: 25px;
+    width: 22px;
     height: 3px;
-    background-color: black;
+    background-color:#2b2b2b;
     margin: 5px 0;
-    padding: 0;
-    border: 0;
+    transition: all 0.2s;
 }
 .contain {
     display: inline-block;
     cursor: pointer;
   }
   
-  .bar1, .bar2, .bar3 {
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 5px 0;
-    transition: 0.3s;
+.navbar-toggler .bar1 {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
 }
-  
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-.change .bar2 {
+.navbar-toggler .bar2 {
     opacity: 0;
 }
   
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-4px, -3px) ;
-    transform: rotate(45deg) translate(-5px, -3px) ;
+.navbar-toggler .bar3 {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+.navbar-toggler .collapsed .bar1 {
+    transform: rotate(0);
+}
+.navbar-toggler .collapsed .bar2 {
+    opacity: 1;
+}
+.navbar-toggler .collapsed .bar3 {
+    transform: rotate(0);
 }
 
 #page-2 .rectangle {
@@ -83,16 +86,18 @@ body {
     column-gap: 2%;
 }
 #page-2 .rectangle .left {
-    column-width: 25%;
+    width: 25%;
     background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
 }
 #page-2 .rectangle .left h1 {
     color:white;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 4rem;
-    padding-top: 50%;
+    font-size: 3.5rem;
+    padding-top: 55%;
 }
 #page-2 .rectangle .right {
     width: 75%;
@@ -110,7 +115,7 @@ body {
     font-size: 1.2em;
     text-align:left;
 }
-@media (max-width: 765px) {
+@media (max-width: 530px) {
     #page-1 .svg_img {
         display: none;
     }
@@ -121,23 +126,66 @@ body {
         margin: 50% auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         column-count: 2;
         column-gap: 2%;
     }
     #page-2 .rectangle .left {
-        column-width: 10em;
-        background-color: #2b2b2b;
+        width: 100%;
+        padding-bottom: 5%;
+        padding-left: 5%;
     }
     #page-2 .rectangle .right {
         padding-left: 5%;
     }
     #page-2 .rectangle .left h1 {
-        color:white;
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         font-size: 2.5em;
+        line-height: 0;
+    }        
+    #page-2 .rectangle .right h2 {
+        padding-top: 0.5em;
+        margin-bottom: 1em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 1.6em;
+    }
+    #page-2 .rectangle .right p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        text-align: left;
+    }
+}
+@media (min-width: 531px) and (max-width: 765px) {
+    #page-1 .svg_img {
+        display: none;
+    }
+    #page-2 .rectangle {
+        width: 85%;
+        height: 100%;
+        border: 1px solid #707070;
+        margin: 50% auto;
+        display: flex;
+        flex-direction: column;
+        column-count: 2;
+        column-gap: 2%;
+    }
+    #page-2 .rectangle .left {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+    #page-2 .rectangle .left h1 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 2.5em;
+        line-height: 0;
+        padding-left: 5%;
+        padding-bottom: 5%;
+    }
+
+    #page-2 .rectangle .right {
+        width: 100%;
         padding-left: 5%;
     }
     #page-2 .rectangle .right h2 {
@@ -145,7 +193,7 @@ body {
         margin-bottom: 1em;
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
-        font-size: 2em;
+        font-size: 1.6em;
     }
     #page-2 .rectangle .right p {
         font-family: 'Montserrat', sans-serif;
