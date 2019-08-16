@@ -42,7 +42,7 @@ body {
     background: transparent !important;
 }
 .navbar-toggler .navicon {
-    width: 22px;
+    width: 28px;
     height: 3px;
     background-color:#2b2b2b;
     margin: 5px 0;
@@ -51,7 +51,7 @@ body {
 .contain {
     display: inline-block;
     cursor: pointer;
-  }
+}
   
 .navbar-toggler .bar1 {
     transform: rotate(45deg);
@@ -65,13 +65,13 @@ body {
     transform: rotate(-45deg);
     transform-origin: 10% 90%;
 }
-.navbar-toggler .collapsed .bar1 {
+.navbar-toggler.collapsed .bar1 {
     transform: rotate(0);
 }
-.navbar-toggler .collapsed .bar2 {
+.navbar-toggler.collapsed .bar2 {
     opacity: 1;
 }
-.navbar-toggler .collapsed .bar3 {
+.navbar-toggler.collapsed .bar3 {
     transform: rotate(0);
 }
 
