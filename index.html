@@ -51,13 +51,13 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#About" class="nav-link">
+                <a href="#page-2" class="nav-link">
                     <i class="fas fa-info fa-lg icon"></i>
                     <span class="link-text">About</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#Progress" class="nav-link">
+                <a href="#page-3" class="nav-link">
                     <i class="fas fa-tasks fa-lg icon"></i>
                     <span class="link-text">Progress</span>
                 </a>
@@ -68,29 +68,23 @@
                     <span class="link-text">Contact</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <i class="fas fa-moon fa-lg icon"></i>
-                    <span class="link-text">Theme</span>
-                </a>
-            </li>
         </ul>
     </nav>
     <section class="main" id="page-1">
         <div class="row">
-            <div class="col-md-6" id="hero_txt">
+            <div class="hero_txt" id="hero_txt">
                     <h1 id="home">A Portfolio Website</h1>
                     <p>Learning everyday. (This is a prototype website, still in an initial stage.)</p>
             </div>
-            <div class="col-md-5 svg_img">
+            <div class="svg_img" id="lg-screen">
                 <img class ="img-fluid" id="geometric" src="/imgs/geometric.svg" alt="square geometric image">
             </div>
         </div>
     </section>
-    <section id="page-2">
+    <section class="main" id="page-2">
         <div class="rectangle" id="About">
             <div class="left">
-                <h1>About&nbsp;me</h1>
+                <h1>About me</h1>
             </div>
             <div class="right">
                 <h2>Pratik Nadgouda</h2>
@@ -103,96 +97,97 @@
             </div>
         </div>
     </section>
-    <section id="page-3">
-        <div class="container-fluid px-0 rectangle-pg-3" id="Progress">
+    <section class="main" id="page-3">
+        <div class="rectangle" id="Progress">
             <div class="top" id="head-pg-3" >
                 <h1>My&nbsp;Progress</h1>
             </div>
             <div class="row">
-            <div class="col">
-                <div class="languages">
-                    <i class="fas fa-graduation-cap fa-2x lang-icon"></i>
-                    <h2>ECE</h2>
-                </div>
-                <div class= "col-md-8" id="barss">
-                    <div class="progress">
-                        <div class="progress-bar bg-info progress-bar-animated progress-bar-striped" role="progressbar" style="width: 39%" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                </div>
-                <div class="languages">
-                    <i class="far fa-file-code fa-2x lang-icon"></i>
-                    <h2>C</h2>
-                </div>
-                <div class= "col-md-8" id="barss">
-                    <div class="progress">
-                        <div class="progress-bar bg-info progress-bar-animated progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
+                <div class="column" id="column-1">
+                    <div class="languages">
+                        <i class="fas fa-graduation-cap fa-2x lang-icon" id="lg-screen"></i>
+                        <h2>ECE</h2>
+                    </div>
+                    <div class= "barss">
+                        <div class="progress">
+                            <div class="progress-bar bg-info progress-bar-animated progress-bar-striped" role="progressbar" style="width: 39%" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
                     <div class="languages">
-                        <i class="far fa-file-code fa-2x lang-icon"></i>
+                        <i class="far fa-file-code fa-2x lang-icon" id="lg-screen"></i>
+                        <h2>C</h2>
+                    </div>
+                    <div class= "barss">
+                        <div class="progress">
+                            <div class="progress-bar bg-info progress-bar-animated progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="languages">
+                        <i class="far fa-file-code fa-2x lang-icon" id="lg-screen"></i>
                         <h2>C++</h2>
                     </div>
-                    <div class= "col-md-8" id="barss">
+                    <div class= "barss">
                         <div class="progress">
                             <div class="progress-bar bg-info progress-bar-animated progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                    </div>
-                    <div class="languages">
-                        <i class="fas fa-ethernet fa-2x lang-icon"></i>
-                        <h2>Web Dev</h2>
-                    </div>
-                    <div class= "col-md-8" id="barss">
-                        <div class="progress">
-                            <div class="progress-bar bg-info progress-bar-animated progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="languages-1">
-                        <i class="far fa-file-code fa-2x lang-icon"></i>
+                <div class="column" id="column-2">
+                    <div class="languages">
+                        <i class="far fa-file-code fa-2x lang-icon" id="lg-screen"></i>
                         <h2>Python</h2>
                     </div>
-                    <div class= "col-md-8" id="barss-1">
+                    <div class= "barss">
                         <div class="progress">
                             <div class="progress-bar bg-info progress-bar-animated progress-bar-striped" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                    <div class="languages-1">
-                        <i class="far fa-file-code fa-2x lang-icon"></i>
+                    <div class="languages">
+                        <i class="far fa-file-code fa-2x lang-icon" id="lg-screen"></i>
                         <h2>VHDL</h2>
                     </div>
-                    <div class= "col-md-8" id="barss-1">
+                    <div class= "barss">
                         <div class="progress">
                             <div class="progress-bar bg-info progress-bar-animated progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                    <div class="languages-1">
-                        <i class="far fa-file-code fa-2x lang-icon"></i>
+                    <div class="languages">
+                        <i class="far fa-file-code fa-2x lang-icon" id="lg-screen"></i>
                         <h2>MatLab</h2>
                     </div>
-                    <div class= "col-md-8" id="barss-1">
+                    <div class= "barss">
                         <div class="progress">
                             <div class="progress-bar bg-info progress-bar-animated progress-bar-striped" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
-
+                <div class="column" id="column-3">
+                    <div class="languages">
+                        <i class="fas fa-ethernet fa-2x lang-icon" id="lg-screen"></i>
+                        <h2 id="lg-screen">Web Development</h2>
+                        <h2 id="sm-screen">Web Dev</h2>
+                    </div>
+                    <div class= "barss">
+                        <div class="progress">
+                            <div class="progress-bar bg-info progress-bar-animated progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        </div>
     </section>
-    <section id="page-4">
+    <section class="main "id="page-4">
         <div class="rectangle" id="Contact">
             <div class="left">
                 <h1>Contact</h1>
             </div>
             <div class="right">
                 <div class="row">
-                    <div class="col">
-                        <div class="col-md-5" id="buttons-1">
+                    <div class="column">
+                        <div id="buttons">
                             <a class="btn btn-outline-dark" href="#collapse-1" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse-1">
-                            <i class="fab fa-linkedin fa-3x"></i>
+                            <i class="fab fa-linkedin fa-3x" id="lg-screen"></i>
+                            <span id="sm-screen">LinkedIn</span>
                             </a>
                             <div class="collapse" id="collapse-1">
                                 <div class="card card-body">
@@ -200,8 +195,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5" id="buttons"><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapse-2" role="button" aria-expanded="false" aria-controls="collapse-2">
-                            <i class="fas fa-envelope-open fa-3x"></i>
+                        <div id="buttons"><a class="btn btn-outline-dark" data-toggle="collapse" href="#collapse-2" role="button" aria-expanded="false" aria-controls="collapse-2">
+                            <i class="fas fa-envelope-open fa-3x" id="lg-screen"></i>
+                            <span id="sm-screen">Email</span>
                         </a>
                             <div class="collapse" id="collapse-2">
                                 <div class="card card-body">
@@ -209,9 +205,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5" id="buttons">
+                        <div id="buttons">
                             <a class="btn btn-outline-dark" href="#collapse-3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse-3">
-                                <i class="fab fa-github-square fa-3x"></i>
+                                <i class="fab fa-github-square fa-3x" id="lg-screen"></i>
+                                <span id="sm-screen">GitHub</span>
                             </a>
                             <div class="collapse" id="collapse-3">
                                 <div class="card card-body">
