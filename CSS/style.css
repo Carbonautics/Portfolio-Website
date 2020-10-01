@@ -10,7 +10,8 @@ body {
     --transition-speed: 600ms;
 }
 body::-webkit-scrollbar {
-    width: 20px;
+    width: 6px;
+    height: 0px;
 }
 
 body::-webkit-scrollbar-track {
